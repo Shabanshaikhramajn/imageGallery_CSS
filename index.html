@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    height: 100vh;
+    width: 100%;
+    background-color: moccasin;
+    display: grid;
+    place-items: center;
+
+}
+
+.center{
+    width: 28%;
+    height: 95%;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.image{
+background-color: pink;
+    height: 90%;
+    width: 90%;
+    /* background-color: pink; */
+
+    animation: gallery 6s linear infinite;
+
+
+
+}
+
+
+@keyframes gallery {
+    0%{
+        background-image: url(villian\ movie\ poster.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        
+    }
+    33%{
+        background-image: url(vintage\ girl\ poster.jpg);
+        border-radius: 10px;
+        background-size: cover;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    66%{
+        background-image: url(warrior_2_by_hecate_stock_d9p1mho.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+
+ </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="center">
+    <div class="image"></div>
+
+</div>
+  </div>
+  
+
+
+    
+</body>
+</html>
